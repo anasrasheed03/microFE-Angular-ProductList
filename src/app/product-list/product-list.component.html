@@ -1,0 +1,14 @@
+<div class="fd-container">
+  <h1 class="fd-title">List of Products</h1>
+  <div class="fdLayoutGridRow">
+    <div class="fdLayoutGridCol-6" *ngFor="let product of productList" (click)="goToDetails(product.id)">
+      <ul class="fd-list fd-list--compact" role="list">
+        <li role="listitem" tabindex="0" class="fd-list__item">
+            <a href="#" class="fd-link fd-list__title fd-link--emphasized emphasized" tabindex="0"><span class="fd-link--emphasized emphasized">{{ product.title }}</span></a>
+            <span class="fd-list__title">{{ product.description }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
